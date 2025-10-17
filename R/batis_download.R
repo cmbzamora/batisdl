@@ -1,6 +1,12 @@
+<<<<<<< HEAD
+#' Download OECD BaTIS and write Excel
+#'
+#' Minimal, no-retry downloader that aborts on 404/429, excludes self-as-partner,
+=======
 #' OECD BaTIS API Downloader
 #'
 #' Download OECD BaTIS and write Excel, excludes self-as-partner,
+>>>>>>> 7f28c91 (Update DESCRIPTION and batis_download.R; add .gitignore entry)
 #' and saves as "[REPORTER]_BATIS_[start]_[end].xlsx".
 #'
 #' @param reporter_code 3-letter ISO code (e.g., "FRA")
@@ -12,6 +18,14 @@
 #' @return Invisibly, the output file path
 #' @examples
 #' \dontrun{
+<<<<<<< HEAD
+#' batis_download("FRA", 2023, 2023, tempdir(), key_from_site = "AUS.AUT+...+S.A.USD_EXC.B")
+#' }
+#' @export
+batis_download <- function(...) {  # keep your real args here
+  # existing function body…
+}
+=======
 #' key <- "AUS.AUT+BEL+CAN+CHL+COL+CRI+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LTU+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA+AFG+ALB+DZA+AGO+AIA+ATG+ARG+ARM+ABW+AZE+BHS+BHR+BGD+BRB+BLR+BLZ+BEN+BMU+BTN+BOL+BIH+BWA+BRA+BRN+BGR+BFA+BDI+CPV+KHM+CMR+CYM+CAF+TCD+CHN+COM+COG+CIV+HRV+CUB+CUW+CYP+PRK+COD+DJI+DMA+DOM+ECU+EGY+SLV+GNQ+ERI+SWZ+ETH+FRO+FJI+PYF+GAB+GMB+GEO+GHA+GRD+GTM+GIN+GNB+GUY+HTI+HND+HKG+IND+IDN+IRN+IRQ+JAM+JOR+KAZ+KEN+KIR+XKV+KWT+KGZ+LAO+LBN+LSO+LBR+LBY+MAC+MDG+MWI+MYS+MDV+MLI+MLT+MRT+MUS+MDA+MNG+MNE+MSR+MAR+MOZ+MMR+NAM+NPL+NCL+NIC+NER+NGA+MKD+OMN+PAK+PSE+PAN+PNG+PRY+PER+PHL+QAT+ROU+RUS+RWA+KNA+LCA+VCT+WSM+STP+SAU+SEN+SRB+SYC+SLE+SGP+SXM+SLB+SOM+ZAF+LKA+SDN+SUR+SYR+TWN+TJK+TZA+THA+TLS+TGO+TON+TTO+TUN+TKM+TCA+TUV+UGA+UKR+ARE+URY+UZB+VUT+VEN+VNM+YEM+ZMB+ZWE+ANT_F+SCG_F+W+WXD.M+X..SC1+SDA+SI1+SJ1+SK1+SC2+SDB+SI2+SJ2+SK2+SC3+SI3+SJ3+SC4+SA+SB+SC+SD+SE+SF+SG+SH+SI+SJ+SK+SL+SOX+SOX1+SPX1+SPX4+S.A.USD_EXC.B"
 #' batis_download(
 #' reporter_code = "JPN",         #CHANGE COUNTRY CODE
@@ -22,6 +36,7 @@
 #' )
 #' }
 #' @export
+>>>>>>> 7f28c91 (Update DESCRIPTION and batis_download.R; add .gitignore entry)
 
 batis_download <- function(
   reporter_code,

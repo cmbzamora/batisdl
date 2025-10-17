@@ -11,3 +11,4 @@ License: Apache License (>= 2) | file LICENSE
 Encoding: UTF-8
 Depends: R (>= 3.5)
 Imports: httr2, readr, dplyr, stringr, openxlsx
+RoxygenNote: 7.3.2
