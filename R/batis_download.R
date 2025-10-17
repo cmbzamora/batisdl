@@ -1,4 +1,24 @@
-# SPDX-License-Identifier: Apache-2.0
+#' Download OECD BaTIS and write Excel
+#'
+#' Minimal, no-retry downloader that aborts on 404/429, excludes self-as-partner,
+#' and saves as "[REPORTER]_BATIS_[start]_[end].xlsx".
+#'
+#' @param reporter_code 3-letter ISO code (e.g., "FRA")
+#' @param start_year Integer start year
+#' @param end_year Integer end year (defaults to start_year)
+#' @param output_dir Output folder for the xlsx
+#' @param key_from_site Long key copied from the OECD site
+#' @param format "csvfilewithlabels" (default) or "csvfile"
+#' @return Invisibly, the output file path
+#' @examples
+#' \dontrun{
+#' batis_download("FRA", 2023, 2023, tempdir(), key_from_site = "AUS.AUT+...+S.A.USD_EXC.B")
+#' }
+#' @export
+batis_download <- function(...) {  # keep your real args here
+  # existing function body…
+}
+
 batis_download <- function(
   reporter_code,
   start_year,
