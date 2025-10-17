@@ -1,10 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+
 #' Abort-on-status CSV fetch (no retries)
 #'
-#' Makes a GET request (httr2), **does not** auto-error on 4xx/5xx, and
-#' aborts with clear messages for 404, 429, others; returns a parsed tibble for 2xx.
-#' @param url Character. Full request URL.
-#' @param ... Passed to readr::read_csv.
-#' @return A tibble (on 2xx) or `stop()` on error statuses.
+#' Does not auto-error on 4xx/5xx; we check and stop with clear messages.
+#' Returns a tibble on 2xx.
 #' @keywords internal
 safe_read_csv_abort <- function(url, ...) {
   req <- httr2::request(url) |>
