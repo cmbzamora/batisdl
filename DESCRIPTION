@@ -2,8 +2,15 @@ Package: batisdl
 Type: Package
 Title: Minimal OECD BaTIS Downloader (No Retries)
 Version: 0.1.0
-Authors@R: person(Zamora, Christian Marvin, email = "cbzamora1@up.edu.ph", role = c("aut","cre"))
-Description: Minimal wrapper to download OECD BaTIS via SDMX v1, exclude self-partner, write XLSX.
+Authors@R: 
+    c(
+      person(given = "Christian Marvin", family = "Zamora",
+             role = c("aut", "cre"),
+             email = "cbzamora1@up.edu.ph")
+    )
+Description: Minimal wrapper to download OECD BaTIS via SDMX v1, exclude self-as-partner, and write an Excel file.
 License: Apache License (>= 2) | file LICENSE
 Encoding: UTF-8
+Depends: R (>= 3.5)
 Imports: httr2, readr, dplyr, stringr, openxlsx
+Suggests: remotes
