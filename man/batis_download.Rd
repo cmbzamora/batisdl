@@ -40,7 +40,7 @@ batis_download(
 reporter_code = "JPN",         #CHANGE COUNTRY CODE
 start_year    = 2018,          #CHANGE
 end_year      = 2018,          #CHANGE
-output_dir    = '/Users/cmbzamora/Library/CloudStorage/OneDrive-AsianDevelopmentBank/Personal/MRIO Series Revisions 2017-24/JPN/BATIS',   #PATH / DIRECTORY WHERE YOU WANT THE FILE TO BE SAVED
+output_dir    = "output-dir",  #PATH / DIRECTORY WHERE YOU WANT THE FILE TO BE SAVED
 key_from_site = key            #<- DO NOT CHANGE
 )
 }
