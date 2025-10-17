@@ -3,7 +3,7 @@ safe_read_csv_abort <- function(url, ...) {
   req <- httr2::request(url) |>
     httr2::req_error(is_error = function(resp) FALSE) |>
     httr2::req_headers(
-      `User-Agent` = sprintf("ADB-BaTIS-R/%s (httr2)", getRversion()),
+      `User-Agent` = sprintf("BaTIS-R/%s (httr2)", getRversion()),
       `Accept-Encoding` = "gzip, deflate"
     )
 
