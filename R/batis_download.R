@@ -1,6 +1,3 @@
-#' Download OECD BaTIS and write Excel
-#'
-#' Minimal, no-retry downloader that aborts on 404/429, excludes self-as-partner,
 #' OECD BaTIS API Downloader
 #'
 #' Download OECD BaTIS and write Excel, excludes self-as-partner,
