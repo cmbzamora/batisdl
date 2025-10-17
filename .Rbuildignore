@@ -1,0 +1,13 @@
+^\.github$
+^LICENSE\.md$
+^README\.md$
+^README\.Rmd$
+^\.Rproj$
+^\.Rproj\.user$
+^CRAN-SUBMISSION$
+^docs$
+^inst/doc$
+^pkgdown$
+^vignettes/.*\.html$
+^data-raw$
+^\.DS_Store$
