@@ -19,7 +19,7 @@ batis_download(
   reporter_code = "FRA",         #CHANGE COUNTRY CODE
   start_year    = 2017,          #CHANGE
   end_year      = 2017,          #CHANGE
-  output_dir    = "outputdir",   #PATH / DIRECTORY WHERE YOU WANT THE FILE TO BE SAVED
+  output_dir    = "output-dir",   #PATH / DIRECTORY WHERE YOU WANT THE FILE TO BE SAVED
   key_from_site = key            #<- DO NOT CHANGE
 )
 
